@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wdrożenie Proxmox do nauczania</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+            </span>
+        </label>
+    </div>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Wdrożenie Proxmox do nauczania</h1>
+        </header>
+
+        <nav class="navbar">
+            <a href="#wprowadzenie" class="active">Wprowadzenie</a>
+            <a href="#infrastruktura">Infrastruktura</a>
+            <a href="#narzedzia">Narzędzia</a>
+            <a href="#ansible">Ansible</a>
+            <a href="#edukacja">Edukacja</a>
+            <a href="#podsumowanie">Podsumowanie</a>
+        </nav>
+
+        <section id="wprowadzenie">
+            <h2>Wprowadzenie</h2>
+            <p>W Technikum nr 9 wdrożenie platformy wirtualizacyjnej Proxmox Virtual Environment (PVE) stało się fundamentem nauczania systemów operacyjnych, sieci komputerowych oraz programowania. Proces rozpoczął się w 2018 roku z inicjatywy nauczyciela Macieja Kołodzieja, który był pomysłodawcą projektu. Na początku wykorzystano mały serwer, co umożliwiło pierwsze eksperymenty z wirtualizacją. Wkrótce, dzięki zaangażowaniu uczniów: Roberta Kruka, Marcina Łukasiewicza, Jakuba Frelika, Anny Koncewicz oraz Bartka Ostafina, wdrożono używany dwuprocesorowy serwer Dell, co znacząco zwiększyło możliwości infrastruktury.</p>
+        </section>
+
+        <section id="infrastruktura">
+            <h2>Infrastruktura</h2>
+            <p>Obecnie Technikum nr 9 dysponuje zaawansowanym klastrem serwerowym, który – jak na warunki szkoły publicznej – wyróżnia się imponującymi parametrami. Klaster posiada 256 rdzeni procesorowych, 1.7 TiB pamięci RAM oraz 17 TiB przestrzeni dyskowej. Taka infrastruktura jest wyjątkowa w kontekście placówek edukacyjnych i umożliwia realizację szerokiego zakresu działań, od nauczania wirtualizacji i systemów operacyjnych po praktyczne wdrożenia technologii wspierających administrację IT.</p>
+            <p>Dzięki zastosowaniu nowoczesnych rozwiązań, takich jak Proxmox Virtual Environment, szkoła może oferować uczniom dostęp do technologii na poziomie profesjonalnym, co znacząco podnosi jakość kształcenia oraz przygotowuje ich do pracy w branży IT.</p>
+        </section>
+
+        <section id="narzedzia">
+            <h2>Narzędzia</h2>
+            <p>Oprócz zastosowań edukacyjnych, platforma Proxmox w Technikum nr 9 jest wykorzystywana także do wdrażania maszyn wirtualnych i kontenerów wspomagających pracę administratora sieci. W ramach tej infrastruktury uruchomiono narzędzia takie jak Zabbix, Ansible i Snipe-IT.</p>
+            <ul>
+                <li><strong>Zabbix</strong>: Służy do monitorowania klastrów serwerowych, pozwalając na szczegółową analizę zużycia zasobów, statusu węzłów oraz wykorzystania przestrzeni dyskowej.</li>
+                <li><strong>Snipe-IT</strong>: Umożliwia zarządzanie zasobami IT w szkole – administratorzy mogą efektywnie monitorować sprzęt i oprogramowanie, prowadząc dokładny rejestr zasobów oraz ich aktualizacji.</li>
+            </ul>
+        </section>
+
+        <section id="ansible">
+            <h2>Ansible</h2>
+            <p>Ansible jest wykorzystywany w Technikum nr 9 do zarządzania urządzeniami sieciowymi i hostami, zapewniając efektywną automatyzację procesów administracyjnych. Narzędzie to umożliwia centralne zarządzanie konfiguracją serwerów, przełączników, routerów oraz innych elementów infrastruktury sieciowej za pomocą prostych skryptów YAML.</p>
+            <p>Jednym z kluczowych elementów Ansible są playbooki – skrypty definiujące zadania do wykonania na zarządzanych hostach. Playbooki pozwalają na automatyzację takich operacji jak konfiguracja urządzeń, aktualizacja oprogramowania czy wdrażanie polityk bezpieczeństwa.</p>
+            <p>Ansible pozwala również na realizację bardziej zaawansowanych scenariuszy, takich jak orkiestracja złożonych procesów sieciowych czy wdrażanie rozwiązań typu Software Defined Networking (SDN). Dzięki modułom dedykowanym dla popularnych producentów sprzętu sieciowego możliwe jest zarządzanie różnorodnymi urządzeniami w jednym playbooku. Wdrożenie Ansible w Technikum nr 9 nie tylko usprawnia pracę administratora sieci, ale także przygotowuje uczniów do pracy z nowoczesnymi technologiami stosowanymi w branży IT.</p>
+            <p>W Technikum nr 9 Ansible znajduje zastosowanie nie tylko w codziennych zadaniach administracyjnych, takich jak konfiguracja urządzeń sieciowych czy utrzymanie zgodności systemów, ale także w edukacji. Uczniowie uczą się korzystać z tego narzędzia do automatyzacji procesów IT oraz poznają nowoczesne metody zarządzania infrastrukturą.</p>
+        </section>
+
+        <section id="edukacja">
+            <h2>Edukacja</h2>
+            <p>Uczniowie Technikum nr 9 mają możliwość nauki zarówno systemów Linux, jak i Windows, w środowisku wirtualnym, co pozwala im na zdobywanie wszechstronnych kompetencji administracyjnych. Dzięki wykorzystaniu Proxmoxa mogą konfigurować i zarządzać systemami klienckimi oraz serwerowymi, poznając różnice w ich funkcjonowaniu i zastosowaniach. Ćwiczenia obejmują instalację, konfigurację i zabezpieczanie usług sieciowych, takich jak serwery WWW, DNS, DHCP czy Active Directory.</p>
+            <p>Dodatkowo uczniowie uczą się wirtualizacji urządzeń sieciowych, takich jak routery MikroTik, co umożliwia im praktyczne testowanie zaawansowanych konfiguracji sieciowych w bezpiecznym, izolowanym środowisku. Dzięki wykorzystaniu systemu RouterOS w maszynach wirtualnych mogą konfigurować routing dynamiczny, VPN, firewalle oraz kontrolę ruchu sieciowego. To pozwala na lepsze zrozumienie zasad działania sieci i zdobycie cennych umiejętności niezbędnych w pracy administratora IT.</p>
+        </section>
+
+        <section id="podsumowanie">
+            <h2>Podsumowanie</h2>
+            <p>Dzięki tej inicjatywie Technikum nr 9 stało się liderem w nauczaniu technologii informatycznych, a absolwenci szkoły są doskonale przygotowani do kariery w branży IT. Wspólna praca nauczyciela i uczniów nad tym projektem pokazuje, jak pasja i zaangażowanie mogą zmienić sposób nauczania i otworzyć nowe możliwości przed młodymi specjalistami.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img src="img/proxmox0.png" alt="Proxmox" class="gallery-item active">
+                    <img src="img/proxmox1.png" alt="Proxmox" class="gallery-item">
+                    <img src="img/proxmox2.png" alt="Proxmox" class="gallery-item">
+                    <img src="img/proxmox3.png" alt="Proxmox" class="gallery-item">
+                    <img src="img/proxmox4.png" alt="Proxmox" class="gallery-item">
+                    <img src="img/proxmox5.png" alt="Proxmox" class="gallery-item">
+                    <img src="img/proxmox6.png" alt="Proxmox" class="gallery-item">
+                    <img src="img/proxmox7.png" alt="Proxmox" class="gallery-item">
+                </div>
+                <button class="gallery-button prev" id="prev-button">❮</button>
+                <button class="gallery-button next" id="next-button">❯</button>
+            
+            </div>
+            
+                <div class="fullscreen-overlay" id="fullscreen-overlay">
+                <button class="fullscreen-close" id="fullscreen-close">&times;</button>
+                <button class="fullscreen-arrow prev" id="fullscreen-prev">❮</button>
+                <img src="" alt="Powiększone zdjęcie" id="fullscreen-image">
+                <button class="fullscreen-arrow next" id="fullscreen-next">❯</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <a href="#wprowadzenie">Wprowadzenie</a> |
+            <a href="#infrastruktura">Infrastruktura</a> |
+            <a href="#narzedzia">Narzędzia</a> |
+            <a href="#ansible">Ansible</a> |
+            <a href="#edukacja">Edukacja</a> |
+            <a href="#podsumowanie">Podsumowanie</a>
+        </p>
+        <p>&copy; 2025 Texts and design by Maciej Kołodziej & Szymon Nagodziński</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
